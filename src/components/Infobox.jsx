@@ -36,21 +36,21 @@ const Infobox = ({ Current }) => {
         <p className='tw-text-center tw-text-slate-400 tw-font-medium'>{pokemonObj.name}</p>
       </div>
       <div>
-        <li className='tw-list-none'><span>Species :</span><p>{pokemonObj.name}</p> </li>
-        <li className='tw-list-none'><span>Height :</span><p>{pokemonObj.height}</p> </li>
-        <li className='tw-list-none'><span>Weight :</span><p>{pokemonObj.weight}</p> </li>
-        <li className='tw-list-none'><span>Abilities :</span>
-        {pokemonObj.abilities && Array.from(pokemonObj.abilities).map((element,index)=>(<p key={index}>{element.ability.name}</p>))
+        <li className='tw-list-none tw-flex tw-gap-2'><span className='tw-p-1 tw-text-xs tw-border-blue-900 tw-border-2 tw-bg-white tw-rounded-md '>Species :</span><p className='tw-font-medium tw-font-mono tw-bg-slate-500 tw-text-white tw-rounded-md tw-p-2 tw-text-xs tw-text-center'>{pokemonObj.name}</p> </li>
+        <li className='tw-list-none tw-flex tw-gap-2'><span className='tw-p-1 tw-text-xs tw-border-blue-900 tw-border-2 tw-bg-white tw-rounded-md '>Height :</span><p className='tw-font-medium tw-font-mono tw-bg-slate-500 tw-text-white tw-rounded-md tw-p-2 tw-text-xs tw-text-center'>{pokemonObj.height}</p> </li>
+        <li className='tw-list-none tw-flex tw-gap-2'><span className='tw-p-1 tw-text-xs tw-border-blue-900 tw-border-2 tw-bg-white tw-rounded-md '>Weight :</span><p className='tw-font-medium tw-font-mono tw-bg-slate-500 tw-text-white tw-rounded-md tw-p-2 tw-text-xs tw-text-center'>{pokemonObj.weight}</p> </li>
+        <li className='tw-list-none tw-flex tw-gap-2'><span className='tw-p-1 tw-text-xs tw-border-blue-900 tw-border-2 tw-bg-white tw-rounded-md '>Abilities :</span>
+        {pokemonObj.abilities && Array.from(pokemonObj.abilities).map((element,index)=>(<p className='tw-font-medium tw-font-mono tw-bg-slate-500 tw-text-white tw-rounded-md tw-p-2 tw-text-xs tw-text-center' key={index}>{element.ability.name}</p>))
         }</li>
       </div>
       <div className='basestates'>
-        <li className='tw-list-none'><span>Base Experience :</span><p></p> </li>
-        <li className='tw-list-none'><span>Base HP :</span><p></p> </li>
-        <li className='tw-list-none'><span>Base Attack :</span><p></p> </li>
-        <li className='tw-list-none'><span>Base Defense :</span><p></p> </li>
-        <li className='tw-list-none'><span>Base Speed :</span><p></p> </li>
-        <li className='tw-list-none'><span>Base Special Attack :</span><p></p> </li>
-        <li className='tw-list-none'><span>Base Special Defense :</span><p></p> </li>
+        <li className='tw-list-none tw-flex tw-gap-2'><span className='tw-p-1 tw-text-xs tw-border-blue-900 tw-border-2 tw-bg-white tw-rounded-md '>Base Experience :</span><p></p> </li>
+        <li className='tw-list-none tw-flex tw-gap-2'><span className='tw-p-1 tw-text-xs tw-border-blue-900 tw-border-2 tw-bg-white tw-rounded-md '>Base HP :</span><p></p> </li>
+        <li className='tw-list-none tw-flex tw-gap-2'><span className='tw-p-1 tw-text-xs tw-border-blue-900 tw-border-2 tw-bg-white tw-rounded-md '>Base Attack :</span><p></p> </li>
+        <li className='tw-list-none tw-flex tw-gap-2'><span className='tw-p-1 tw-text-xs tw-border-blue-900 tw-border-2 tw-bg-white tw-rounded-md '>Base Defense :</span><p></p> </li>
+        <li className='tw-list-none tw-flex tw-gap-2'><span className='tw-p-1 tw-text-xs tw-border-blue-900 tw-border-2 tw-bg-white tw-rounded-md '>Base Speed :</span><p></p> </li>
+        <li className='tw-list-none tw-flex tw-gap-2'><span className='tw-p-1 tw-text-xs tw-border-blue-900 tw-border-2 tw-bg-white tw-rounded-md '>Base Special Attack :</span><p></p> </li>
+        <li className='tw-list-none tw-flex tw-gap-2'><span className='tw-p-1 tw-text-xs tw-border-blue-900 tw-border-2 tw-bg-white tw-rounded-md '>Base Special Defense :</span><p></p> </li>
       </div>
     </div>
   );

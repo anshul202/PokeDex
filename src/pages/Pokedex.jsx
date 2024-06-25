@@ -26,16 +26,16 @@ const Pokedex = () => {
 
 
   return (
-    <main>
+    <main className="tw-p-5 tw-border-blue-950 tw-border-2">
       <NavLink to="/">
         <Button sx={{ background: "transparent", margin: "0.7rem" }} variant="contained" startIcon={<KeyboardBackspaceIcon />}>Back</Button>
       </NavLink>
-      <div className="tw-w-[50%] tw-mx-auto tw-h-[60%] tw-bg-slate-300 tw-border-2 tw-shadow-xl tw-rounded-lg">
+      <div className="tw-w-[50%] tw-mx-auto tw-h-[70h] tw-bg-slate-300 tw-border-2 tw-shadow-xl tw-rounded-lg">
         <nav className="flex">
           <IconButton></IconButton>
           <IconButton></IconButton>
         </nav>
-        <div className="tw-grid tw-grid-cols-2 tw-h-[60%]">
+        <div className="tw-grid tw-grid-cols-2 tw-h-[70%]">
           <Infobox Current={Current} />
           <div className="tw-flex tw-flex-col">
           <TextField className="tw-my-2" id="outlined-basic" label="Search Pokemon!" variant="outlined" 
@@ -44,8 +44,8 @@ const Pokedex = () => {
           }}
           />
           
-          <ul className="tw-list-none tw-scroll-m-1 tw-max-h-40 tw-overflow-y-scroll tw-overflow-x-hidden">
-            <div/>
+          <ul className="tw-list-none tw-scroll-m-1 tw-h-[60vh] tw-overflow-y-scroll tw-overflow-x-hidden">
+          
             {PokemonList.map((pokemon,index)=><li className="tw-flex tw-items-center tw-w-full tw-px-4 tw-py-2 tw-border-b tw-bg-gray-200 tw-border-black tw-rounded-t tw-transition-transform hover:tw-scale-110" 
             key={index}
             onClick={()=>{
